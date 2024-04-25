@@ -16,7 +16,7 @@ public class ClonadorPersona {
 
     public List<Persona> clonarPersonas() {
     	//creamos la Lista Persona conteniendo personas
-        List<Persona> personas = new ArrayList<Persona>();
+        ArrayList<Persona> personas = new ArrayList<Persona>();
 
         //crear 10 clones
         for (int i = 0; i < 10; i++) {

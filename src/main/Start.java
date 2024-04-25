@@ -11,7 +11,7 @@ public class Start {
         ClonadorPersona clonador = new ClonadorPersona("Clon");
         List<Persona> personas = clonador.clonarPersonas();
         //si el clon es valido saldra el mensaje clon valido
-        System.out.println("Clones válidas:");
+        System.out.println("Clones válidos:");
         //creamos el bucle para comparar los clones
         for (Persona persona : personas) {
             System.out.println(persona);
