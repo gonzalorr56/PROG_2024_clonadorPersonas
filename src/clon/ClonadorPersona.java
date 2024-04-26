@@ -21,11 +21,11 @@ public class ClonadorPersona {
         //crear 10 clones
         for (int i = 0; i < 10; i++) {
             try {
-            	//creamos los datos randomizados
+            	//creamos los datos randomizados (con minimo y maximo)
                 Random rand = new Random();
-                int edad = rand.nextInt(PersonaData.MAX_EDAD + 0);
-                int altura = rand.nextInt(PersonaData.MAX_ALTURA + 0);
-                int peso = rand.nextInt(PersonaData.MAX_PESO + 0);
+                int edad = rand.nextInt(PersonaData.MAX_EDAD - PersonaData.MIN_EDAD + 1) + PersonaData.MIN_EDAD;
+                int altura = rand.nextInt(PersonaData.MAX_ALTURA - PersonaData.MIN_ALTURA + 1) + PersonaData.MIN_ALTURA;
+                int peso = rand.nextInt(PersonaData.MAX_PESO - PersonaData.MIN_PESO + 1) + PersonaData.MIN_PESO;
 
                 //añadimos los clones
                 personas.add(0, new Persona(nombre, edad, altura, peso));

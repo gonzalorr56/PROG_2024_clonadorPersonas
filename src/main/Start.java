@@ -8,7 +8,7 @@ import modelo.Persona;
 public class Start {
     public static void main(String[] args) {
     	//creamos el clonador dentro de ClonadorPersona
-        ClonadorPersona clonador = new ClonadorPersona("Clon");
+        ClonadorPersona clonador = new ClonadorPersona("Gonzalo");
         List<Persona> personas = clonador.clonarPersonas();
         //si el clon es valido saldra el mensaje clon valido
         System.out.println("Clones válidos:");
