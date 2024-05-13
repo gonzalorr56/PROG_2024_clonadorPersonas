@@ -9,16 +9,17 @@ import modelo.PersonaData;
 public class ClonadorPersona {
     private String nombre;
 
+    //Constructor de la clase ClonadorPersona
     public ClonadorPersona(String nombre) {
     	//nos quedamos el nombre aqui guardado
         this.nombre = nombre;
     }
-
+    //Método para clonar personas
     public List<Persona> clonarPersonas() {
-    	//creamos la Lista Persona conteniendo personas
+    	//creamos la Lista Persona que contendra personas clonadas
         ArrayList<Persona> personas = new ArrayList<Persona>();
 
-        //crear 10 clones
+        //bucle para crear 10 clones
         for (int i = 0; i < 10; i++) {
             try {
             	//creamos los datos randomizados (con minimo y maximo)
@@ -27,7 +28,7 @@ public class ClonadorPersona {
                 int altura = rand.nextInt(PersonaData.MAX_ALTURA - PersonaData.MIN_ALTURA + 1) + PersonaData.MIN_ALTURA;
                 int peso = rand.nextInt(PersonaData.MAX_PESO - PersonaData.MIN_PESO + 1) + PersonaData.MIN_PESO;
 
-                //añadimos los clones
+                //nueva instancia de Persona con valores generados del random y añadirla a la List
                 personas.add(0, new Persona(nombre, edad, altura, peso));
             } catch (Exception e) {
             	//mensaje si el clon creado esta mal o no se puede crear

@@ -6,7 +6,7 @@ public class PersonaData {
     public static final int MAX_ALTURA = 200;
     public static final int MAX_EDAD = 99;
     
-    public static final int MIN_PESO = 0;
-    public static final int MIN_ALTURA = 0;
-    public static final int MIN_EDAD = 0;
+    public static final int MIN_PESO = 20;
+    public static final int MIN_ALTURA = 130;
+    public static final int MIN_EDAD = 18;
 }
